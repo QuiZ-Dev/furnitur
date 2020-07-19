@@ -1,0 +1,7 @@
+@mixin card ($bg-color, $width, $height:$width, $radius:null) {
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    border-radius: $radius;    
+}
+

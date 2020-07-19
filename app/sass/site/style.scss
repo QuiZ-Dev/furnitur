@@ -1,0 +1,104 @@
+
+body{
+    background-color: #F2F2F2;
+    font-family: $basic-font;
+}
+
+.card__list{
+    display: flex;
+}
+
+.card{
+    @include card(#fff, 156px, auto, 8px);
+    padding: 25px 15px 15px 15px;
+    display: block;
+    position: relative;
+    box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.1);
+}
+
+.card--dark{
+    background-color: $card-bg-color;
+    .card__name{
+        color: $card-title-color;
+    }
+    .card__footer-coust{
+        color: $card-coust-color;
+    }
+    .card__footer-number{
+        color: $card-rait-color;
+    }
+    .img__heart{
+        color: $card-heart-color;
+    }
+
+}
+
+
+.card__img{
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.card__add{
+    display: flex;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.card__add-icon{
+    margin: auto;
+    width: 16px;
+    height: 16px;
+}
+
+.card__add .card__add-icon{
+    fill: #E4E9F2;
+}
+
+.card__add--on .card__add-icon{
+    fill: #7F9FF6;
+}
+
+.card__name{
+    color: #343241;
+    font: bold 14px/16px 'Roboto';
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card__footer{
+    display: flex;
+    align-items: baseline;
+}
+
+.card__footer-coust{
+    color: #2E4B9C;
+    font: bold 16px/19px "Roboto";
+    margin-right: 4px;
+}
+
+.card__footer-coust-cross{
+    color: #8F9BB3;
+    text-decoration-line: line-through;
+    font: 300 12px/14px 'Roboto';
+}
+
+.card__footer-rait{
+    margin-left: auto;
+}
+
+.card__footer-number{
+    display: inline-block;
+    color:  #8B8B8B;
+    font: lighter 12px/14px Roboto;
+    
+}
+
+.card__footer-teit-img{
+    width: 12px;
+    height: 12px;
+}
